@@ -1,0 +1,10 @@
+{
+  "name": "zadanie-pzc",
+  "version": "1.0.0",
+  "description": "Rozwiazanie zadania PZC 2.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
