@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 
 const requestHandler = (req, res) => {
     const now = new Date();
-    const timeString = now.toISOString().split('.')[0] + '+00:00';
+    const timeString = now.toLocaleString('pl-PL');
     
     const htmlContent = `<html>
 <head>
