@@ -4,7 +4,15 @@ const port = process.env.PORT || 3000;
 
 const requestHandler = (req, res) => {
     const now = new Date();
-    const timeString = now.toLocaleString('pl-PL');
+    const timeString = now.toLocaleString("pl-PL", {
+      timeZone: "Europe/Warsaw",
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
     
     const htmlContent = `<html>
 <head>
